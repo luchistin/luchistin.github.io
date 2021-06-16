@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRUEBA GITHUB123</title>
-    <style>
-        body {
-            margin: 50px 50px 100px 50px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h1, h2 {
-            border-bottom: 10px solid rgb(0, 136, 255); 
-        }
-        table {
-            border: 5px solid hsl(205, 100%, 50%) ;
-        }
-        table tbody td{
-            border-bottom: 2px solid rgb(0, 0, 138);
-            border-right: 2px solid rgb(0, 167, 204);
-        }
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>My Store</title>
+	<style>
+        @import url(global.css);
     </style>
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+	
+	<script defer src='/build/bundle.js'></script>
+	<script src="scripts/index.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-       <h1>Territorios de Costa Rica</h1>
-    </header>
-    <main>
-        <section>
-            <p>Al 2021 la organización territorial comprende de 7 provincias, 82 cantones y 488 distritos. La División Territorial Administrativa de la República define con fundamento en las leyes, decretos, acuerdos tomados por la Comisión Nacional de la División Administrativa y situaciones de hecho la demarcación de estos territorios. El decreto más actual de la misma corresponde al N°41548-MGP del 28 de enero de 2019.</p>
-        </section>
-        <section>
-            <h2>Historia</h2>
-            <p>Con la instauración de la república y la declaración de Costa Rica como República libre, soberana e independiente, se aprobó la Constitución Política de 1848 el 30 de noviembre de ese año, y según la Ley No. 36 del 7 de diciembre de 1848, se estableció por primera vez las denominaciones de provincia, cantón y distrito.​ Según la mencionada ley, se crearon las provincias de:</p>
-            <ul>
-                <li>San José, con un cantón y diez distritos parroquiales.</li>
-                <li>Alajuela, con dos cantones y ocho distritos parroquiales.</li>
-                <li>Cartago, con dos cantones y trece distritos parroquiales.</li>
-                <li>Heredia, con un cantón y siete distritos parroquiales.</li>
-                <li>Guanacaste, con cuatro cantones y ocho distritos parroquiales.</li>
-            </ul>
-            <figure>
-                <img src="Escudo Costa Rica.png" height="200" alt="Imagen del Escudo de Costa Rica">
-                <figcaption> Escudo de Costa Rica https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_Costa_Rica.svg/800px-Coat_of_arms_of_Costa_Rica.svg.png</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>Organización provincial</h2>
-            <p>Política y administrativamente, Costa Rica está conformada por 7 provincias.</p>
-            <table>
-                <caption>Provincias de Costa Rica</caption>
-                <thead>
-                    <tr>
-                        <th>Provincia</th><th>Cantones</th><th>Distritos</th><th>Población</th><th>Extensión Km <sup>2</sup></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>San Jose</td>
-                        <td>20</td>
-                        <td>123</td>
-                        <td>1404242</td>
-                        <td>4965.90</td>
-                    </tr>
-                    <tr>
-                        <td>Alajuela</td>
-                        <td>16</td>
-                        <td>116</td>
-                        <td>848146</td>
-                        <td>9757.53</td>
-                    </tr>
-                    <tr>
-                        <td>Cartago</td>
-                        <td>8</td>
-                        <td>51</td>
-                        <td>490903</td>
-                        <td>3124.67</td>
-                 <tr>
-                        <td>Heredia</td>
-                        <td>10</td>
-                        <td>47</td>
-                        <td>433677</td>
-                        <td>2656.99</td>
-                    </tr>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+	<section><div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+		Menu Principal
+		</a>
+	  
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		  <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+		  <li><a class="dropdown-item" href="Carrito.html">Detalle de carrito</a></li>
+		  <li><a class="dropdown-item" href="Acerca.html">Acerca de ...</a></li>
+		  <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
+		</ul>
+	  </div>
+	</section>  
+	<section>
+		<form>
+			<input id="iFilter" type="search" placeholder="Busque su producto aqui..."/>
+			<button id="bSearch">Buscar</button>
+		</form>
+	</section>
+	<section>
+		<!-- <div class="container overflow-hidden">
+			<div class="row gy-5">
+			  <div class="col-6">
+				<div class="p-3 border bg-light">Producto Numero 1</div>
+			  </div>
+			  <div class="col-6">
+				<div class="p-3 border bg-light">Producto Numero 2</div>
+			  </div>
+			  <div class="col-6">
+				<div class="p-3 border bg-light">Producto Numero 3</div>
+			  </div>
+			  <div class="col-6">
+				<div class="p-3 border bg-light">Producto Numero 4</div>
+			  </div>
+			</div>
+		  </div>	 -->
+		  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="Queso Americano.png" class="d-block w-100" alt="Queso Americano">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Queso Americano</h5>
+				  <p>Marca los quesitos.</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="Queso Manchego.jpg" class="d-block w-100" alt="Queso Manchego">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Queso Manchego</h5>
+				  <p>Marca los quesitos españoles.</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="Queso Mozarella.jpg" class="d-block w-100" alt="Queso Mozarella">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Queso Mozarella</h5>
+				  <p>Marca los quesos italianos.</p>
+				</div>
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Siguiente</span>
+			</button>
+		  </div>
+	</section>
+	<section>
+	<p/>
+	<h2>OFERTA DEL DIA</h2>
+	<h4>Nombre Producto</h4>
+	<figure>
+		<img src="gato.jpg" class="rounded mx-auto d-block" alt="Imagen del producto de la oferta del dia!">
+		<h10><figcaption> <a href="ofertadeldia"> Ver mas detalles </figcaption></a></h10>
+	</figure>
+	
+	</p>
+	</section>	
+	
 </body>
 </html>
